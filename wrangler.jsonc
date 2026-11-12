@@ -13,7 +13,33 @@
 	"observability": {
 		"enabled": true
 	},
-	"upload_source_maps": true
+	"upload_source_maps": true,
+	"r2_buckets": [
+		{
+			"bucket_name": "quest-assets",
+			"binding": "quest_assets",
+			"remote": true
+		}
+	],
+	"vectorize": [
+		{
+			"binding": "VECTORIZE",
+			"index_name": "quest-embeddings",
+			"remote": true
+		}
+	],
+	"d1_databases": [
+		{
+			"binding": "quest_db",
+			"database_name": "quest-db",
+			"database_id": "e0ccb9d9-517d-4d27-8fa1-0f3cf4638fe9",
+			"remote": true
+		}
+        ],
+        "ai": {
+              	"binding": "AI",
+		"remote": true
+  	}
 	/**
 	 * Smart Placement
 	 * https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
